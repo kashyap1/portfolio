@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kashyap Tatmiya - Engineering Manager</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <style>
+
+
+
+    
+    
+    Kashyap Tatmiya - Engineering Manager
+    
+    
+    
         body { 
             font-family: 'Inter', sans-serif; 
             background: linear-gradient(135deg, #1e3a8a, #a855f7, #ec4899);
@@ -27,7 +27,9 @@
         .card p, .card ul { @apply px-8 py-6 max-w-full; }
         .card h3 { @apply text-xl font-semibold text-white mb-2 leading-normal; }
         .nav-glass { 
-            @apply bg-white/10 backdrop-blur-2xl shadow-md rounded-2xl px-8 py-6;
+            @apply shadow-md rounded-2xl px-8 py-6;
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.8), rgba(168, 85, 247, 0.8), rgba(236, 72, 153, 0.8));
+            backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.4);
         }
         .hero-bg { 
@@ -60,7 +62,9 @@
         .sub-section-title { @apply text-lg font-semibold text-white mt-6 mb-3 accent-pink; }
         .accent-pink { @apply text-pink-400; }
         .mobile-menu {
-            @apply bg-white/10 backdrop-blur-2xl shadow-md rounded-2xl px-8 py-6 absolute top-16 left-0 right-0;
+            @apply shadow-md rounded-2xl px-8 py-6 absolute top-16 left-0 right-0;
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.8), rgba(168, 85, 247, 0.8), rgba(236, 72, 153, 0.8));
+            backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.4);
         }
         footer { @apply px-8 py-6; }
@@ -72,286 +76,286 @@
             --pink-500: #ec4899;
             --pink-600: #db2777;
         }
-    </style>
-</head>
-<body class="bg-stone-100">
-    <!-- Navigation -->
-    <nav class="nav-glass sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex justify-between items-center p-4">
-                <h1 class="text-2xl font-bold text-white">Kashyap Tatmiya</h1>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#experience" class="nav-link">Experience</a>
-                    <a href="#education" class="nav-link">Education</a>
-                    <a href="#awards" class="nav-link">Awards</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </div>
-                <!-- Mobile Menu Button -->
-                <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>
-                </button>
-            </div>
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden mobile-menu">
-                <div class="flex flex-col space-y-4">
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#experience" class="nav-link">Experience</a>
-                    <a href="#education" class="nav-link">Education</a>
-                    <a href="#awards" class="nav-link">Awards</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    
 
-    <!-- Hero Section -->
-    <section class="hero-bg text-white pt-24 pb-28 md:pb-36">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-5xl md:text-6xl font-bold mb-4 fade-in">Kashyap Harsukhlal Tatmiya</h1>
-            <p class="text-xl md:text-2xl mb-8 fade-in">Engineering Manager | Crafting Scalable, Innovative Solutions</p>
-            <div class="flex justify-center space-x-4">
-                <a href="#contact" class="btn-primary hover-scale p-2 rounded-md">Connect with Me</a>
-                <a href="https://www.linkedin.com/in/kashyap-tatmiya-9046898" target="_blank" class="btn-primary bg-transparent border border-white/20 hover:bg-white/20 hover:text-violet-300 p-2 rounded-md">LinkedIn</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="pt-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title fade-in">About Me</h2>
-            <div class="card slide-in p-6">
-                <p class="text-lg text-gray-200 leading-relaxed">
-                    With over 15 years of experience as an Engineering Manager and Full-Stack Developer, I specialize in delivering scalable, cloud-native solutions. My expertise spans frontend architecture (React, micro-frontends), backend microservices (Node.js, Kafka), and DevOps (Docker, CI/CD). I have led cross-functional teams at companies like Cisco Systems, Gupshup Technology, and Jivox, driving innovation, optimizing performance, and fostering a collaborative engineering culture.
-                </p>
-                <div class="mt-6">
-                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Technical Skills</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div>
-                            <p class="font-medium text-white">Backend</p>
-                            <p class="text-gray-300">Node.js, Express.js, Sails.js, MongoDB, PHP, MySQL, PostgreSQL, WebSockets, JWT, GraphQL, Kafka, Microservices</p>
-                        </div>
-                        <div>
-                            <p class="font-medium text-white">Frontend</p>
-                            <p class="text-gray-300">React, Next.js, Micro-frontends, Module Federation, Zustand, Redux, JavaScript (ES6+), HTML5, CSS3, Jest, Cypress, MUI</p>
-                        </div>
-                        <div>
-                            <p class="font-medium text-white">DevOps & Tools</p>
-                            <p class="text-gray-300">Docker, GitLab CI, Kubernetes, AWS, Azure, Webpack, Vite, Rollup, Test Automation</p>
-                        </div>
+    
+    
+        
+            
+                Kashyap Tatmiya
+                
+                    About
+                    Experience
+                    Education
+                    Awards
+                    Contact
+                
+                
+                
+                    
+                        
+                    
+                
+            
+            
+            
+                
+                    About
+                    Experience
+                    Education
+                    Awards
+                    Contact
+                
+            
+        
+    
+
+<!-- Hero Section -->
+<section class="hero-bg text-white pt-24 pb-28 md:pb-36">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold mb-4 fade-in">Kashyap Harsukhlal Tatmiya</h1>
+        <p class="text-xl md:text-2xl mb-8 fade-in">Engineering Manager | Crafting Scalable, Innovative Solutions</p>
+        <div class="flex justify-center space-x-4">
+            <a href="#contact" class="btn-primary hover-scale p-2 rounded-md">Connect with Me</a>
+            <a href="https://www.linkedin.com/in/kashyap-tatmiya-9046898" target="_blank" class="btn-primary bg-transparent border border-white/20 hover:bg-white/20 hover:text-violet-300 p-2 rounded-md">LinkedIn</a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="pt-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="section-title fade-in">About Me</h2>
+        <div class="card slide-in p-6">
+            <p class="text-lg text-gray-200 leading-relaxed">
+                With over 15 years of experience as an Engineering Manager and Full-Stack Developer, I specialize in delivering scalable, cloud-native solutions. My expertise spans frontend architecture (React, micro-frontends), backend microservices (Node.js, Kafka), and DevOps (Docker, CI/CD). I have led cross-functional teams at companies like Cisco Systems, Gupshup Technology, and Jivox, driving innovation, optimizing performance, and fostering a collaborative engineering culture.
+            </p>
+            <div class="mt-6">
+                <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Technical Skills</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <p class="font-medium text-white">Backend</p>
+                        <p class="text-gray-300">Node.js, Express.js, Sails.js, MongoDB, PHP, MySQL, PostgreSQL, WebSockets, JWT, GraphQL, Kafka, Microservices</p>
+                    </div>
+                    <div>
+                        <p class="font-medium text-white">Frontend</p>
+                        <p class="text-gray-300">React, Next.js, Micro-frontends, Module Federation, Zustand, Redux, JavaScript (ES6+), HTML5, CSS3, Jest, Cypress, MUI</p>
+                    </div>
+                    <div>
+                        <p class="font-medium text-white">DevOps & Tools</p>
+                        <p class="text-gray-300">Docker, GitLab CI, Kubernetes, AWS, Azure, Webpack, Vite, Rollup, Test Automation</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="pt-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title fade-in">Professional Experience</h2>
-            <div class="space-y-12">
-                <!-- Engineering Manager, Gupshup Technology -->
-                <div class="card slide-in p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Engineering Manager</h3>
-                    <p class="text-gray-300">Gupshup Technology, Bangalore, India | Apr 2022 - May 2025</p>
-                    <div class="mt-4">
-                        <h4 class="sub-section-title">Key Projects</h4>
-                        <ul class="list-disc pl-6 text-gray-300 space-y-2">
-                            <li><strong>Cascade Analytics</strong> - Architected a high-performance analytics platform using Node.js, PostgreSQL, and microservices. Designed scalable backend APIs and event-driven Kafka pipelines, integrated with a responsive React frontend for robust data visualization.</li>
-                            <li><strong>AI Module UI</strong> - Led UI development for defining intents/entities, training models, and configuring AI agent behavior, enhancing user interaction with AI-driven features.</li>
-                        </ul>
-                        <h4 class="sub-section-title">Frontend Leadership</h4>
-                        <ul class="list-disc pl-6 text-gray-300 space-y-2">
-                            <li>Led development of critical modules: Bot Studio, Campaign Manager, CDP Integrations, and Gupshup Design System, ensuring seamless API integration and scalable architectures.</li>
-                            <li>Implemented internationalization (i18n) and dynamic theming for personalized user experiences across multiple CX modules.</li>
-                            <li>Drove standardization of UI libraries, establishing a reusable framework for frontend projects, improving development efficiency.</li>
-                        </ul>
-                        <h4 class="sub-section-title">Engineering Operations & Dev Tooling</h4>
-                        <ul class="list-disc pl-6 text-gray-300 space-y-2">
-                            <li>Designed and implemented CI/CD pipelines with Docker, enabling reliable and consistent deployments.</li>
-                            <li>Enhanced code quality and UI security through rigorous reviews and standardized practices, while optimizing Jira workflows for cross-functional collaboration.</li>
-                        </ul>
-                        <h4 class="sub-section-title">Performance & Developer Experience</h4>
-                        <ul class="list-disc pl-6 text-gray-300 space-y-2">
-                            <li>Improved Lighthouse scores from ~85 to ~95 and reduced bundle sizes by ~50% through code-splitting and optimized API consumption patterns.</li>
-                            <li>Fostered a strong UI engineering culture via bi-weekly demos, code reviews, and mentorship, accelerating team ramp-up and collaboration.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Technical Leader, Cisco Systems -->
-                <div class="card slide-in p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Technical Leader, Cisco Systems</h3>
-                    <p class="text-gray-300">Bangalore, India | Apr 2016 - Apr 2022</p>
-                    <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
-                        <li>Led a team of 3 to deliver key features for the Intersight product, including subscription management, performance charts, reporting, customizable VMs, and deployment actions.</li>
-                        <li><strong>Project: Cost Optimizer APIs</strong> - Designed backend APIs using aggregated queries for accurate cost analysis and reporting.</li>
-                        <li><strong>Project: UI Proxy Tool</strong> - Developed a tool to proxy local UIs to backend environments, eliminating 100% of cloud instances for UI development, saving infrastructure costs.</li>
-                        <li><strong>Project: Real-Time Job Deployment</strong> - Prototyped real-time job deployment progress using WebSockets, enhancing visibility and efficiency.</li>
-                    </ul>
-                </div>
-                <!-- Principal Software Engineer, Cisco CloudCenter -->
-                <div class="card slide-in p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Principal Software Engineer, Cisco CloudCenter</h3>
-                    <p class="text-gray-300">Bangalore, India | Jun 2015 - Apr 2016</p>
-                    <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
-                        <li><strong>Project: CloudCenter Enhancements</strong> - Enhanced features using Backbone.js, React.js, and Redux, contributing to cloud-agnostic application modeling templates and service library.</li>
-                    </ul>
-                </div>
-                <!-- Tech Lead, Jivox -->
-                <div class="card slide-in p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Tech Lead, Jivox</h3>
-                    <p class="text-gray-300">Bangalore, India | Nov 2011 - May 2015</p>
-                    <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
-                        <li>Developed Advertiser Portal features using JavaScript, jQuery, and Backbone.js.</li>
-                        <li><strong>Project: Custom Ad Units</strong> - Built custom widget configuration interface and ad units for customizable ad creation.</li>
-                        <li><strong>Project: Job-Candidate Matching Application</strong> - Created a Node.js-based application using MongoDB and Sails.js to match candidate profiles with job opportunities based on stability and expertise.</li>
-                    </ul>
-                </div>
-                <!-- Module Lead, Persistent Systems -->
-                <div class="card slide-in p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Module Lead, Persistent Systems</h3>
-                    <p class="text-gray-300">Pune, India | Feb 2008 - Nov 2011</p>
-                    <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
-                        <li>Led a team of 4 to deliver UI projects for Yahoo!, enhancing Adcenter and Advertiser Dashboard functionality.</li>
-                        <li><strong>Project: Exchange Analytics Module</strong> - Pioneered development of a UI wrapper framework and analytics module from scratch.</li>
-                    </ul>
-                </div>
-                <!-- Programmer, Juriscape Legal Research -->
-                <div class="card slide-in p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Programmer, Juriscape Legal Research</h3>
-                    <p class="text-gray-300">Ahmedabad, India | Jan 2006 - Feb 2008</p>
-                    <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
-                        <li><strong>Project: Distributed Web Crawler</strong> - Developed a distributed web crawler for Hound.com, enabling efficient job listing data collection.</li>
-                        <li>Built internal server applications for campaign tracking, article database, and email systems.</li>
-                    </ul>
-                </div>
-                <!-- Junior Programmer, BimSym eBusiness Solutions -->
-                <div class="card slide-in p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Junior Programmer, BimSym eBusiness Solutions</h3>
-                    <p class="text-gray-300">Ahmedabad, India | Feb 2005 - Dec 2005</p>
-                    <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
-                        <li><strong>Project: Healthcare Framework</strong> - Developed a backend object-oriented framework for healthcare/insurance applications.</li>
-                        <li>Implemented Lead Organizer and Recruiter portal features.</li>
-                    </ul>
-                </div>
-                <!-- Junior Programmer, Compeer Solutions -->
-                <div class="card slide-in p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Junior Programmer, Compeer Solutions</h3>
-                    <p class="text-gray-300">Rajkot, India | Aug 2004 - Jan 2005</p>
-                    <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
-                        <li>Contributed to initial software development projects.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="pt-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title fade-in">Education</h2>
+<!-- Experience Section -->
+<section id="experience" class="pt-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="section-title fade-in">Professional Experience</h2>
+        <div class="space-y-12">
+            <!-- Engineering Manager, Gupshup Technology -->
             <div class="card slide-in p-6">
-                <h3 class="text-xl font-semibold text-white mb-2 leading-normal">B.E. in Information Technology</h3>
-                <p class="text-gray-300">Hemchandracharya North Gujarat University, Gujarat, India | 2000 - 2004</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Awards Section -->
-    <section id="awards" class="pt-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title fade-in">Awards & Recognitions</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="card slide-in p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Cisco Systems</h3>
+                <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Engineering Manager</h3>
+                <p class="text-gray-300">Gupshup Technology, Bangalore, India | Apr 2022 - May 2025</p>
+                <div class="mt-4">
+                    <h4 class="sub-section-title">Key Projects</h4>
                     <ul class="list-disc pl-6 text-gray-300 space-y-2">
-                        <li>Contribution towards Intersight Workload Engine (IWE) GA - Feb 2022</li>
-                        <li>Helped team with critical defects - Jul 2021</li>
-                        <li>Coordinated multiple features end-to-end - Jul 2019</li>
-                        <li>Developed UI-Proxy tool, reducing costs - Oct 2017</li>
-                        <li>Pixel-perfect reporting UI - Sep 2016</li>
-                        <li>Single-handed dashboard/reporting feature - Sep 2016</li>
-                        <li>Integrated charting library per UX design - Jun 2016</li>
+                        <li><strong>Cascade Analytics</strong> - Architected a high-performance analytics platform using Node.js, PostgreSQL, and microservices. Designed scalable backend APIs and event-driven Kafka pipelines, integrated with a responsive React frontend for robust data visualization.</li>
+                        <li><strong>AI Module UI</strong> - Led UI development for defining intents/entities, training models, and configuring AI agent behavior, enhancing user interaction with AI-driven features.</li>
                     </ul>
-                </div>
-                <div class="card slide-in p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Other Recognitions</h3>
+                    <h4 class="sub-section-title">Frontend Leadership</h4>
                     <ul class="list-disc pl-6 text-gray-300 space-y-2">
-                        <li><strong>Jivox:</strong> Quarterly Award for Parallax Ad Unit - 2014</li>
-                        <li><strong>Persistent Systems:</strong> You Made a Difference Award - Sep 2010</li>
-                        <li><strong>Persistent Systems:</strong> Spot Award for XAF project - Jun 2009</li>
-                        <li><strong>Juriscape Legal Research:</strong> Team of the Year Award for Hound.com - 2007</li>
-                        <li><strong>Juriscape Legal Research:</strong> Outstanding Performer Award - 2006-2007</li>
+                        <li>Led development of critical modules: Bot Studio, Campaign Manager, CDP Integrations, and Gupshup Design System, ensuring seamless API integration and scalable architectures.</li>
+                        <li>Implemented internationalization (i18n) and dynamic theming for personalized user experiences across multiple CX modules.</li>
+                        <li>Drove standardization of UI libraries, establishing a reusable framework for frontend projects, improving development efficiency.</li>
+                    </ul>
+                    <h4 class="sub-section-title">Engineering Operations & Dev Tooling</h4>
+                    <ul class="list-disc pl-6 text-gray-300 space-y-2">
+                        <li>Designed and implemented CI/CD pipelines with Docker, enabling reliable and consistent deployments.</li>
+                        <li>Enhanced code quality and UI security through rigorous reviews and standardized practices, while optimizing Jira workflows for cross-functional collaboration.</li>
+                    </ul>
+                    <h4 class="sub-section-title">Performance & Developer Experience</h4>
+                    <ul class="list-disc pl-6 text-gray-300 space-y-2">
+                        <li>Improved Lighthouse scores from ~85 to ~95 and reduced bundle sizes by ~50% through code-splitting and optimized API consumption patterns.</li>
+                        <li>Fostered a strong UI engineering culture via bi-weekly demos, code reviews, and mentorship, accelerating team ramp-up and collaboration.</li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="pt-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="section-title fade-in">Get in Touch</h2>
+            <!-- Technical Leader, Cisco Systems -->
             <div class="card slide-in p-6">
-                <p class="text-lg text-gray-200 mb-6">
-                    I'm passionate about building innovative solutions and collaborating on impactful projects. Reach out to discuss opportunities!
-                </p>
-                <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8">
-                    <a href="/cdn-cgi/l/email-protection#88e3e9fbe0f1e9f8a6e1fcc8efe5e9e1e4a6ebe7e5" class="btn-primary hover-scale p-2 rounded-md">Email Me</a>
-                    <a href="https://www.linkedin.com/in/kashyap-tatmiya-9046898" target="_blank" class="btn-primary hover-scale p-2 rounded-md">LinkedIn</a>
-                    <a href="https://github.com/kashyap1" class="btn-secondary hover-scale p-2 rounded-md">GitHub</a>
-                </div>
+                <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Technical Leader, Cisco Systems</h3>
+                <p class="text-gray-300">Bangalore, India | Apr 2016 - Apr 2022</p>
+                <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
+                    <li>Led a team of 3 to deliver key features for the Intersight product, including subscription management, performance charts, reporting, customizable VMs, and deployment actions.</li>
+                    <li><strong>Project: Cost Optimizer APIs</strong> - Designed backend APIs using aggregated queries for accurate cost analysis and reporting.</li>
+                    <li><strong>Project: UI Proxy Tool</strong> - Developed a tool to proxy local UIs to backend environments, eliminating 100% of cloud instances for UI development, saving infrastructure costs.</li>
+                    <li><strong>Project: Real-Time Job Deployment</strong> - Prototyped real-time job deployment progress using WebSockets, enhancing visibility and efficiency.</li>
+                </ul>
+            </div>
+            <!-- Principal Software Engineer, Cisco CloudCenter -->
+            <div class="card slide-in p-6">
+                <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Principal Software Engineer, Cisco CloudCenter</h3>
+                <p class="text-gray-300">Bangalore, India | Jun 2015 - Apr 2016</p>
+                <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
+                    <li><strong>Project: CloudCenter Enhancements</strong> - Enhanced features using Backbone.js, React.js, and Redux, contributing to cloud-agnostic application modeling templates and service library.</li>
+                </ul>
+            </div>
+            <!-- Tech Lead, Jivox -->
+            <div class="card slide-in p-6">
+                <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Tech Lead, Jivox</h3>
+                <p class="text-gray-300">Bangalore, India | Nov 2011 - May 2015</p>
+                <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
+                    <li>Developed Advertiser Portal features using JavaScript, jQuery, and Backbone.js.</li>
+                    <li><strong>Project: Custom Ad Units</strong> - Built custom widget configuration interface and ad units for customizable ad creation.</li>
+                    <li><strong>Project: Job-Candidate Matching Application</strong> - Created a Node.js-based application using MongoDB and Sails.js to match candidate profiles with job opportunities based on stability and expertise.</li>
+                </ul>
+            </div>
+            <!-- Module Lead, Persistent Systems -->
+            <div class="card slide-in p-6">
+                <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Module Lead, Persistent Systems</h3>
+                <p class="text-gray-300">Pune, India | Feb 2008 - Nov 2011</p>
+                <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
+                    <li>Led a team of 4 to deliver UI projects for Yahoo!, enhancing Adcenter and Advertiser Dashboard functionality.</li>
+                    <li><strong>Project: Exchange Analytics Module</strong> - Pioneered development of a UI wrapper framework and analytics module from scratch.</li>
+                </ul>
+            </div>
+            <!-- Programmer, Juriscape Legal Research -->
+            <div class="card slide-in p-6">
+                <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Programmer, Juriscape Legal Research</h3>
+                <p class="text-gray-300">Ahmedabad, India | Jan 2006 - Feb 2008</p>
+                <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
+                    <li><strong>Project: Distributed Web Crawler</strong> - Developed a distributed web crawler for Hound.com, enabling efficient job listing data collection.</li>
+                    <li>Built internal server applications for campaign tracking, article database, and email systems.</li>
+                </ul>
+            </div>
+            <!-- Junior Programmer, BimSym eBusiness Solutions -->
+            <div class="card slide-in p-6">
+                <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Junior Programmer, BimSym eBusiness Solutions</h3>
+                <p class="text-gray-300">Ahmedabad, India | Feb 2005 - Dec 2005</p>
+                <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
+                    <li><strong>Project: Healthcare Framework</strong> - Developed a backend object-oriented framework for healthcare/insurance applications.</li>
+                    <li>Implemented Lead Organizer and Recruiter portal features.</li>
+                </ul>
+            </div>
+            <!-- Junior Programmer, Compeer Solutions -->
+            <div class="card slide-in p-6">
+                <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Junior Programmer, Compeer Solutions</h3>
+                <p class="text-gray-300">Rajkot, India | Aug 2004 - Jan 2005</p>
+                <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
+                    <li>Contributed to initial software development projects.</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="bg-white/10 backdrop-blur-2xl text-white py-12 shadow-md rounded-2xl">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-lg">© 2025 Kashyap Tatmiya. Designed with elegance and precision.</p>
+<!-- Education Section -->
+<section id="education" class="pt-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="section-title fade-in">Education</h2>
+        <div class="card slide-in p-6">
+            <h3 class="text-xl font-semibold text-white mb-2 leading-normal">B.E. in Information Technology</h3>
+            <p class="text-gray-300">Hemchandracharya North Gujarat University, Gujarat, India | 2000 - 2004</p>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+<!-- Awards Section -->
+<section id="awards" class="pt-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="section-title fade-in">Awards & Recognitions</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="card slide-in p-6">
+                <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Cisco Systems</h3>
+                <ul class="list-disc pl-6 text-gray-300 space-y-2">
+                    <li>Contribution towards Intersight Workload Engine (IWE) GA - Feb 2022</li>
+                    <li>Helped team with critical defects - Jul 2021</li>
+                    <li>Coordinated multiple features end-to-end - Jul 2019</li>
+                    <li>Developed UI-Proxy tool, reducing costs - Oct 2017</li>
+                    <li>Pixel-perfect reporting UI - Sep 2016</li>
+                    <li>Single-handed dashboard/reporting feature - Sep 2016</li>
+                    <li>Integrated charting library per UX design - Jun 2016</li>
+                </ul>
+            </div>
+            <div class="card slide-in p-6">
+                <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Other Recognitions</h3>
+                <ul class="list-disc pl-6 text-gray-300 space-y-2">
+                    <li><strong>Jivox:</strong> Quarterly Award for Parallax Ad Unit - 2014</li>
+                    <li><strong>Persistent Systems:</strong> You Made a Difference Award - Sep 2010</li>
+                    <li><strong>Persistent Systems:</strong> Spot Award for XAF project - Jun 2009</li>
+                    <li><strong>Juriscape Legal Research:</strong> Team of the Year Award for Hound.com - 2007</li>
+                    <li><strong>Juriscape Legal Research:</strong> Outstanding Performer Award - 2006-2007</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="pt-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="section-title fade-in">Get in Touch</h2>
+        <div class="card slide-in p-6">
+            <p class="text-lg text-gray-200 mb-6">
+                I'm passionate about building innovative solutions and collaborating on impactful projects. Reach out to discuss opportunities!
+            </p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8">
+                <a href="/cdn-cgi/l/email-protection#88e3e9fbe0f1e9f8a6e1fcc8efe5e9e1e4a6ebe7e5" class="btn-primary hover-scale p-2 rounded-md">Email Me</a>
+                <a href="https://www.linkedin.com/in/kashyap-tatmiya-9046898" target="_blank" class="btn-primary hover-scale p-2 rounded-md">LinkedIn</a>
+                <a href="https://github.com/kashyap1" class="btn-secondary hover-scale p-2 rounded-md">GitHub</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white/10 backdrop-blur-2xl text-white py-12 shadow-md rounded-2xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-lg">© 2025 Kashyap Tatmiya. Designed with elegance and precision.</p>
+    </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
             });
         });
+    });
 
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
 
-        // Intersection Observer for animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    if (entry.target.classList.contains('fade-in')) {
-                        entry.target.classList.add('fade-in');
-                    } else if (entry.target.classList.contains('slide-in')) {
-                        entry.target.classList.add('slide-in');
-                    }
-                    observer.unobserve(entry.target);
+    // Intersection Observer for animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target.classList.contains('fade-in')) {
+                    entry.target.classList.add('fade-in');
+                } else if (entry.target.classList.contains('slide-in')) {
+                    entry.target.classList.add('slide-in');
                 }
-            });
-        }, { threshold: 0.2 });
-
-        document.querySelectorAll('.fade-in, .slide-in').forEach(element => {
-            observer.observe(element);
+                observer.unobserve(entry.target);
+            }
         });
-    </script>
-    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'95fb4429bded4202',t:'MTc1MjYwMzU0Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
-</body>
-</html>
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.fade-in, .slide-in').forEach(element => {
+        observer.observe(element);
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'95fb4dbe0b80b48a',t:'MTc1MjYwMzkzOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+
+
