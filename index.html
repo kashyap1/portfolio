@@ -13,7 +13,7 @@
             background-attachment: fixed;
         }
         h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
-        .section-title { @apply text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight; }
+        .section-title { @apply text-5xl md:text-6xl font-bold !text-white mb-8 tracking-normal leading-tight; }
         .card { 
             @apply p-6 shadow-2xl transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl;
             background: rgba(255, 255, 255, 0.1);
@@ -25,6 +25,7 @@
             word-break: break-word;
         }
         .card p, .card ul { @apply px-8 py-6 max-w-full; }
+        .card h3 { @apply text-xl font-semibold text-white mb-2 leading-normal; }
         .nav-glass { 
             @apply bg-white/10 backdrop-blur-2xl shadow-md rounded-2xl px-8 py-6;
             border: 1px solid rgba(255, 255, 255, 0.4);
@@ -53,13 +54,13 @@
         .btn-secondary { 
             @apply inline-block bg-pink-500/80 text-white font-semibold py-3 px-8 rounded-full hover:bg-pink-600/90 transition;
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.4);
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
         }
         .sub-section-title { @apply text-lg font-semibold text-white mt-6 mb-3 accent-pink; }
         .accent-pink { @apply text-pink-400; }
         .mobile-menu {
-            @apply bg-white/10 backdrop-blur-2xl shadow-md rounded-2xl px-8 py-6;
+            @apply bg-white/10 backdrop-blur-2xl shadow-md rounded-2xl px-8 py-6 absolute top-16 left-0 right-0;
             border: 1px solid rgba(255, 255, 255, 0.4);
         }
         footer { @apply px-8 py-6; }
@@ -107,7 +108,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-bg text-white py-28 md:py-36">
+    <section class="hero-bg text-white pt-24 pb-28 md:pb-36">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-5xl md:text-6xl font-bold mb-4 fade-in">Kashyap Harsukhlal Tatmiya</h1>
             <p class="text-xl md:text-2xl mb-8 fade-in">Engineering Manager | Crafting Scalable, Innovative Solutions</p>
@@ -119,7 +120,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-24">
+    <section id="about" class="pt-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="section-title fade-in">About Me</h2>
             <div class="card slide-in p-6">
@@ -127,7 +128,7 @@
                     With over 15 years of experience as an Engineering Manager and Full-Stack Developer, I specialize in delivering scalable, cloud-native solutions. My expertise spans frontend architecture (React, micro-frontends), backend microservices (Node.js, Kafka), and DevOps (Docker, CI/CD). I have led cross-functional teams at companies like Cisco Systems, Gupshup Technology, and Jivox, driving innovation, optimizing performance, and fostering a collaborative engineering culture.
                 </p>
                 <div class="mt-6">
-                    <h3 class="text-xl font-semibold text-white mb-4">Technical Skills</h3>
+                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Technical Skills</h3>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div>
                             <p class="font-medium text-white">Backend</p>
@@ -148,13 +149,13 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-24">
+    <section id="experience" class="pt-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="section-title fade-in">Professional Experience</h2>
             <div class="space-y-12">
                 <!-- Engineering Manager, Gupshup Technology -->
                 <div class="card slide-in p-6">
-                    <h3 class="text-2xl font-semibold text-white">Engineering Manager</h3>
+                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Engineering Manager</h3>
                     <p class="text-gray-300">Gupshup Technology, Bangalore, India | Apr 2022 - May 2025</p>
                     <div class="mt-4">
                         <h4 class="sub-section-title">Key Projects</h4>
@@ -182,7 +183,7 @@
                 </div>
                 <!-- Technical Leader, Cisco Systems -->
                 <div class="card slide-in p-6">
-                    <h3 class="text-2xl font-semibold text-white">Technical Leader, Cisco Systems</h3>
+                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Technical Leader, Cisco Systems</h3>
                     <p class="text-gray-300">Bangalore, India | Apr 2016 - Apr 2022</p>
                     <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
                         <li>Led a team of 3 to deliver key features for the Intersight product, including subscription management, performance charts, reporting, customizable VMs, and deployment actions.</li>
@@ -193,7 +194,7 @@
                 </div>
                 <!-- Principal Software Engineer, Cisco CloudCenter -->
                 <div class="card slide-in p-6">
-                    <h3 class="text-2xl font-semibold text-white">Principal Software Engineer, Cisco CloudCenter</h3>
+                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Principal Software Engineer, Cisco CloudCenter</h3>
                     <p class="text-gray-300">Bangalore, India | Jun 2015 - Apr 2016</p>
                     <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
                         <li><strong>Project: CloudCenter Enhancements</strong> - Enhanced features using Backbone.js, React.js, and Redux, contributing to cloud-agnostic application modeling templates and service library.</li>
@@ -201,7 +202,7 @@
                 </div>
                 <!-- Tech Lead, Jivox -->
                 <div class="card slide-in p-6">
-                    <h3 class="text-2xl font-semibold text-white">Tech Lead, Jivox</h3>
+                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Tech Lead, Jivox</h3>
                     <p class="text-gray-300">Bangalore, India | Nov 2011 - May 2015</p>
                     <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
                         <li>Developed Advertiser Portal features using JavaScript, jQuery, and Backbone.js.</li>
@@ -211,7 +212,7 @@
                 </div>
                 <!-- Module Lead, Persistent Systems -->
                 <div class="card slide-in p-6">
-                    <h3 class="text-2xl font-semibold text-white">Module Lead, Persistent Systems</h3>
+                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Module Lead, Persistent Systems</h3>
                     <p class="text-gray-300">Pune, India | Feb 2008 - Nov 2011</p>
                     <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
                         <li>Led a team of 4 to deliver UI projects for Yahoo!, enhancing Adcenter and Advertiser Dashboard functionality.</li>
@@ -220,7 +221,7 @@
                 </div>
                 <!-- Programmer, Juriscape Legal Research -->
                 <div class="card slide-in p-6">
-                    <h3 class="text-2xl font-semibold text-white">Programmer, Juriscape Legal Research</h3>
+                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Programmer, Juriscape Legal Research</h3>
                     <p class="text-gray-300">Ahmedabad, India | Jan 2006 - Feb 2008</p>
                     <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
                         <li><strong>Project: Distributed Web Crawler</strong> - Developed a distributed web crawler for Hound.com, enabling efficient job listing data collection.</li>
@@ -229,7 +230,7 @@
                 </div>
                 <!-- Junior Programmer, BimSym eBusiness Solutions -->
                 <div class="card slide-in p-6">
-                    <h3 class="text-2xl font-semibold text-white">Junior Programmer, BimSym eBusiness Solutions</h3>
+                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Junior Programmer, BimSym eBusiness Solutions</h3>
                     <p class="text-gray-300">Ahmedabad, India | Feb 2005 - Dec 2005</p>
                     <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
                         <li><strong>Project: Healthcare Framework</strong> - Developed a backend object-oriented framework for healthcare/insurance applications.</li>
@@ -238,7 +239,7 @@
                 </div>
                 <!-- Junior Programmer, Compeer Solutions -->
                 <div class="card slide-in p-6">
-                    <h3 class="text-2xl font-semibold text-white">Junior Programmer, Compeer Solutions</h3>
+                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Junior Programmer, Compeer Solutions</h3>
                     <p class="text-gray-300">Rajkot, India | Aug 2004 - Jan 2005</p>
                     <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2">
                         <li>Contributed to initial software development projects.</li>
@@ -249,23 +250,23 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="py-24">
+    <section id="education" class="pt-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="section-title fade-in">Education</h2>
             <div class="card slide-in p-6">
-                <h3 class="text-2xl font-semibold text-white">B.E. in Information Technology</h3>
+                <h3 class="text-xl font-semibold text-white mb-2 leading-normal">B.E. in Information Technology</h3>
                 <p class="text-gray-300">Hemchandracharya North Gujarat University, Gujarat, India | 2000 - 2004</p>
             </div>
         </div>
     </section>
 
     <!-- Awards Section -->
-    <section id="awards" class="py-24">
+    <section id="awards" class="pt-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="section-title fade-in">Awards & Recognitions</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="card slide-in p-6">
-                    <h3 class="text-xl font-semibold text-white mb-4">Cisco Systems</h3>
+                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Cisco Systems</h3>
                     <ul class="list-disc pl-6 text-gray-300 space-y-2">
                         <li>Contribution towards Intersight Workload Engine (IWE) GA - Feb 2022</li>
                         <li>Helped team with critical defects - Jul 2021</li>
@@ -277,7 +278,7 @@
                     </ul>
                 </div>
                 <div class="card slide-in p-6">
-                    <h3 class="text-xl font-semibold text-white mb-4">Other Recognitions</h3>
+                    <h3 class="text-xl font-semibold text-white mb-2 leading-normal">Other Recognitions</h3>
                     <ul class="list-disc pl-6 text-gray-300 space-y-2">
                         <li><strong>Jivox:</strong> Quarterly Award for Parallax Ad Unit - 2014</li>
                         <li><strong>Persistent Systems:</strong> You Made a Difference Award - Sep 2010</li>
@@ -291,7 +292,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24">
+    <section id="contact" class="pt-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="section-title fade-in">Get in Touch</h2>
             <div class="card slide-in p-6">
@@ -351,6 +352,6 @@
             observer.observe(element);
         });
     </script>
-    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'95fb1503ba5244ee',t:'MTc1MjYwMTYxNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'95fb4429bded4202',t:'MTc1MjYwMzU0Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 </body>
 </html>
