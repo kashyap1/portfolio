@@ -1,107 +1,137 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Custom styles */
-body { 
-    font-family: 'Inter', sans-serif; 
-    background: linear-gradient(135deg, #1e3a8a, #a855f7, #ec4899);
-    background-attachment: fixed;
+:root{
+  --bg:#e0e5ec;
+  --text:#333;
+  --shadow-dark:#b8bec7;
+  --shadow-light:#ffffff;
+  --accent:#667eea;
+  --radius:20px;
 }
 
-h1, h2, h3, h4 { 
-    font-family: 'Montserrat', sans-serif; 
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
-.section-title { 
-    @apply text-2xl md:text-2xl font-bold text-white mb-8 tracking-normal leading-tight; 
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+  padding:40px 20px;
 }
 
-.card { 
-    @apply p-6 shadow-2xl transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.1);
-    border-radius: 2rem;
-    overflow-wrap: break-word;
-    word-break: break-word;
+h1,h2,h3{
+  font-weight:700;
 }
 
-.card p, .card ul { 
-    @apply px-8 py-6 max-w-full; 
+h1{
+  font-size:clamp(36px,6vw,52px);
+  margin-bottom:8px;
 }
 
-.nav-glass { 
-    @apply shadow-md rounded-2xl px-8 py-6;
-    background: linear-gradient(135deg, rgba(30, 58, 138, 0.8), rgba(168, 85, 247, 0.8), rgba(236, 72, 153, 0.8));
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+h2{
+  font-size:28px;
+  margin-bottom:20px;
 }
 
-.hero-bg { 
-    background: linear-gradient(135deg, rgba(59, 7, 100, 0.8), rgba(236, 72, 153, 0.8)), 
-                url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none"%3E%3Ccircle cx="100" cy="100" r="80" stroke="%23ec4899" stroke-width="2" opacity="0.4"/%3E%3Ccircle cx="150" cy="50" r="40" stroke="%23a855f7" stroke-width="2" opacity="0.4"/%3E%3Cpath d="M50 150 L150 50" stroke="%23fff" stroke-width="2" opacity="0.3"/%3E%3C/svg%3E');
-    background-size: cover;
-    background-attachment: fixed;
+h3{
+  font-size:20px;
+  margin-bottom:8px;
 }
 
-.fade-in { 
-    animation: fadeIn 1.2s ease-out; 
+.container{
+  max-width:1000px;
+  margin:0 auto;
 }
 
-.slide-in { 
-    @apply p-6;
-    animation: slideIn 1s ease-out; 
+.card{
+  border-radius:var(--radius);
+  background:var(--bg);
+  box-shadow:
+    9px 9px 16px var(--shadow-dark),
+    -9px -9px 16px var(--shadow-light);
+  padding:30px;
+  margin-bottom:32px;
 }
 
-@keyframes fadeIn { 
-    from { opacity: 0; transform: translateY(30px); } 
-    to { opacity: 1; transform: translateY(0); } 
+.avatar{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  background: url('@assets/Profile_Photo_120x120.jpg') no-repeat center center;
+  box-shadow: 3px 3px 6px var(--shadow-dark), -3px -3px 6px var(--shadow-light);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:48px;
+  font-weight:900;
+  margin-bottom:16px;
 }
 
-@keyframes slideIn { 
-    from { opacity: 0; transform: translateX(-30px); } 
-    to { opacity: 1; transform: translateX(0); } 
+.btn{
+  display:inline-block;
+  border-radius:12px;
+  background:var(--bg);
+  box-shadow:
+    6px 6px 12px var(--shadow-dark),
+    -6px -6px 12px var(--shadow-light);
+  padding:14px 28px;
+  margin-top:16px;
+  font-weight:600;
+  color:var(--text);
+  text-decoration:none;
+  transition:all .2s ease;
 }
 
-.hover-scale { 
-    @apply transition-transform duration-300 hover:scale-105; 
+.btn:hover{
+  box-shadow:
+    inset 4px 4px 8px var(--shadow-dark),
+    inset -4px -4px 8px var(--shadow-light);
 }
 
-.nav-link { 
-    @apply text-white hover:text-violet-300 font-medium transition-colors; 
+.skill-grid{
+  display:grid;
+  gap:24px;
 }
 
-.btn-primary { 
-    @apply inline-block bg-violet-600/80 text-white font-semibold py-3 px-8 rounded-full hover:bg-violet-500/90 transition;
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+@media(min-width:768px){
+  .skill-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
 }
 
-.btn-secondary { 
-    @apply inline-block bg-pink-500/80 text-white font-semibold py-3 px-8 rounded-full hover:bg-pink-600/90 transition;
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+.timeline-item{
+  position:relative;
+  padding-left:32px;
+  margin-bottom:24px;
 }
 
-.sub-section-title { 
-    @apply text-lg font-semibold text-white mt-6 mb-3 text-pink-400; 
+.timeline-item::before{
+  content:'';
+  position:absolute;
+  left:0;
+  top:8px;
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:var(--accent);
+  box-shadow:
+    3px 3px 6px var(--shadow-dark),
+    -3px -3px 6px var(--shadow-light);
 }
 
-.accent-pink { 
-    @apply text-pink-400; 
-}
+ul{margin-left:24px}
+li{margin-bottom:8px}
 
-.mobile-menu {
-    @apply shadow-md rounded-2xl px-8 py-6 absolute top-16 left-0 right-0;
-    background: linear-gradient(135deg, rgba(30, 58, 138, 0.8), rgba(168, 85, 247, 0.8), rgba(236, 72, 153, 0.8));
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+.contact-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
 }
-
-footer { 
-    @apply px-8 py-6; 
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: var(--text);
+    margin-top: 32px;
 }
